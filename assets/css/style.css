@@ -1,19 +1,35 @@
 body{
     background: gray
 }
+#buttonRow{
+    background-color: rgb(29, 27, 27);
+}
 h1{
-    margin-left: 3vw;
+    font-family: 'Passion One';
+    font-size: 5vw;
+    margin-top: 10px;
+    width: 270px;
+    padding-left: 24px;
     color: orange;
+    background: white;
+    border-radius: 10px;
 }
 .row{ 
+    background:silver;
     border-color: black;
     border-style: solid;
     border-radius: 5px;
     padding: 1vw;
     margin-left: 3px;
     margin-right: 3px;
+    
 }
+
+
+
 #textF{
+    height: 300px;
+    background: rgba(250, 242, 230, 0.658);
     border: 3px;
     border-style: solid;
     border-radius: 5px;
@@ -27,6 +43,9 @@ div.row{
 }
 
 #postButton{
+    background-color: rgb(66, 70, 70);
+    border-color: black;
+    font-family: 'Fredoka One', cursive;
     padding: .5vw;
     margin-left: 1vw;
 
@@ -44,8 +63,8 @@ div.row{
 
 #moreGifs{
 
-    width: 350px;
-    height: 200px;
+    max-width: 350px;
+    max-height: 200px;
     margin-bottom: 10px;
     margin-left: 2vw;
 }
@@ -68,7 +87,7 @@ div.row{
     margin-bottom: 80px;
 }
 #Rating4{
-    margin-top: 150px;
+    margin-top: 130px;
 }
 #Rating5{
     margin-bottom: 80px;
@@ -88,3 +107,19 @@ div.row{
 #Rating10{
     margin-top: 120px;
 }
+#Rating11{
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 1200px) {
+    #gif{
+        display: none;
+    }
+    
+    #moreGifs{
+    
+        max-width: 250px;
+        max-height: 200px;
+        margin-bottom: 10px;
+        margin-left: 2vw;
+    }
+} 
