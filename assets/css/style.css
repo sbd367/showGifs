@@ -1,22 +1,25 @@
 body{
-    background: gray
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/connectwork.png");
 }
 #buttonRow{
-    background-color: rgb(29, 27, 27);
+    background: rgba(48, 47, 45, 0.788);
+    border: 1vw;
+    margin-bottom: 5px;
 }
 h1{
     font-family: 'Passion One';
     font-size: 5vw;
     margin-top: 10px;
+    margin-bottom: 1vw;
     margin-left: 20px;
     width: 21vw;
     padding-left: 2.4vw;
     color: orange;
-    background: white;
+    background: rgba(255, 255, 255, 0.877);
     border-radius: 20px;
 }
 .row{ 
-    background:silver;
+    background:rgba(192, 192, 192, 0.836);
     border-color: black;
     border-style: solid;
     border-radius: 5px;
@@ -35,6 +38,7 @@ h1{
     border-style: solid;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 #buttonRow{
@@ -58,22 +62,36 @@ div.row{
 #newBtn{
     padding: .5vw;
     margin-left: 1vw;
+    font-family: 'Varela Round', sans-serif;
 }
 #giff{
     width: 300px;
     height: 200px;
     margin-top: 30px;
-    margin-bottom: 5px;
     margin-left: 20px;
     border-radius: 30px;
+}
+#RatingT{
+    margin-left: 8vw;
+    margin-top: 10px;
+}
+h2{
+    margin-left: 12vw;
+    margin-bottom: 4vw;
+    color: white;
+    background: orange;
+    padding-bottom: 15px;
+    width: 5vw;
+    border-radius: 60px;
 }
 
 #moreGifs{
 
     width: 350px;
     height: 200px;
-    margin-bottom: 10px;
-    margin-left: 2vw;
+    margin-bottom: 5px;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 #mkBtn{
     margin-bottom: 5px;
@@ -87,35 +105,9 @@ div.row{
 #RatingT{
     text-align: center;
 }
-#Rating2{
-    margin-top: 30px;
-}
-#Rating3{
-    margin-bottom: 80px;
-}
-#Rating4{
-    margin-top: 130px;
-}
-#Rating5{
-    margin-bottom: 80px;
-}
-#Rating6{
-    margin-top: 120px;
-}
-#Rating7{
-    margin-bottom: 80px;
-}
-#Rating8{
-    margin-top: 120px;
-}
-#Rating9{
-    margin-bottom: 80px;
-}
-#Rating10{
-    margin-top: 120px;
-}
-#Rating11{
-    margin-bottom: 20px;
+#Rating{
+    text-align: center;
+    margin-bottom: 1vw;
 }
 #term{
     width: 300px;

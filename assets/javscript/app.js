@@ -9,11 +9,12 @@
                 $('.col-md-1').show();
                 $('#RatingR').empty();
                 $('#gif').empty();
-                $("#moreGif").empty();
+                $("#moreGifL").empty();
+                $("#moreGifR").empty();
         }
 
         //array fo buttons
-        let topics = ["Gymkhana", "Kung Fury", "MotoGP", "Top fuel", "Wakesurfing"];
+        let topics = ["Gymkhana", "Kung Fury", "MotoGP", "Top fuel", "Rick and Morty"];
 
     
 //      click funtion to add a new button
@@ -45,20 +46,32 @@
             }).then(function(response){
                 
                 let data = response.data;
-                console.log(data);
+                var random = Math.floor((Math.random() * 24) + 1);
 
                 for(var i = 0; i < 1; i++){
 
-                    $('#gif').append("<img id='giff' src='" +data[i].images.fixed_width.url+ "'/>");
-                    $('#gif').append("<h2 id='RatingT'>"+data[i].rating+"</h2>");
+                    var random = Math.floor((Math.random() * 24) + 1);
+                    $('#gif').append("<img id='giff' src='" +data[random].images.fixed_width.url+ "'/>");
+                    $('#gif').append("<h2 id='RatingT'>"+data[random].rating+"</h2>");
+
                 }
 
-                for(var i = 2; i < 12; i++){
+                for(var i = 2; i < 7; i++){
 
-                $('#moreGif').append("<img id='moreGifs' src='" +data[i].images.fixed_height.url+ "'/>");
-                $('#RatingR').append("<h2 id='Rating"+[i]+"'>"+data[i].rating+"</h2>");
+                var random = Math.floor((Math.random() * 24) + 1);
+                $('#moreGifL').append("<img id='moreGifs' src='" +data[random].images.fixed_height.url+ "'/>");
+                $('#moreGifL').append("<h2 id='Rating'>"+data[random].rating+"</h2>");
             
                 }
+
+
+                for(var i = 2; i < 7; i++){
+
+                    var random = Math.floor((Math.random() * 24) + 1);
+                    $('#moreGifR').append("<img id='moreGifs' src='" +data[random].images.fixed_height.url+ "'/>");
+                    $('#moreGifR').append("<h2 id='Rating'>"+data[random].rating+"</h2>");
+                
+                    }
 
             })
         });
@@ -106,11 +119,18 @@
                         $('#gif').append("<h2 id='RatingT'>"+data[random].rating+"</h2>");
                     }
     
-                    for(var i = 2; i < 12; i++){
+                    for(var i = 2; i < 7; i++){
     
                         var random = Math.floor((Math.random() * 24) + 1);
-                        $('#moreGif').append("<img id='moreGifs' gif-status='animate' src='" +data[random].images.fixed_height.url+ "' still_Url='"+data[random].images['480w_still'].url+"' animateSrc='" +data[random].images.fixed_height.url+"'/>");
-                        $('#RatingR').append("<h2 id='Rating"+[i]+"'>"+data[random].rating+"</h2>");
+                        $('#moreGifL').append("<img id='moreGifs' gif-status='animate' src='" +data[random].images.fixed_height.url+ "' still_Url='"+data[random].images['480w_still'].url+"' animateSrc='" +data[random].images.fixed_height.url+"'/>");
+                        $('#moreGifL').append("<h2 id='Rating'>"+data[random].rating+"</h2>");
+                
+                    }
+                    for(var i = 2; i < 7; i++){
+    
+                        var random = Math.floor((Math.random() * 24) + 1);
+                        $('#moreGifR').append("<img id='moreGifs' gif-status='animate' src='" +data[random].images.fixed_height.url+ "' still_Url='"+data[random].images['480w_still'].url+"' animateSrc='" +data[random].images.fixed_height.url+"'/>");
+                        $('#moreGifR').append("<h2 id='Rating'>"+data[random].rating+"</h2>");
                 
                     }
 
